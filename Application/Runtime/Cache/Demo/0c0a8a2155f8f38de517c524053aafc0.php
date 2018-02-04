@@ -1,1 +1,0 @@
-<?php if (!defined('THINK_PATH')) exit();?>非法上传文件！
