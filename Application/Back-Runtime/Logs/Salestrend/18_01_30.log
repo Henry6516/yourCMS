@@ -1,0 +1,2186 @@
+[ 2018-01-30T08:27:59+08:00 ] 115.60.61.134 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='赵艳平' 
+                ORDER BY rm.menuid [ RunTime:0.0103s ]
+SQL: select mid from Y_manger WHERE manger='赵艳平' [ RunTime:0.0090s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='10'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0181s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000015s ]
+
+[ 2018-01-30T08:28:39+08:00 ] 115.60.61.134 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: select * from Y_manger where manger='赵艳平' [ RunTime:0.0111s ]
+SQL: z_p_saletrendy 0, '2018-01-29', '2018-01-29', 0, '','','06-happygirl,08-xea,13-showtime,16-sunshine,18-shuai,eBay-A10-forestqing12,eBay-A6-vitalityang1,eBay-C1-taenha2017,eBay-C2-taenha','' [ RunTime:20.1103s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002223s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000139s ]
+
+[ 2018-01-30T08:28:39+08:00 ] 115.60.61.134 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='赵艳平' 
+                ORDER BY rm.menuid [ RunTime:0.0120s ]
+SQL: select mid from Y_manger WHERE manger='赵艳平' [ RunTime:0.0110s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='10'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0124s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000308s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000357s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2018-01-30T08:29:27+08:00 ] 115.60.61.134 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='赵艳平' 
+                ORDER BY rm.menuid [ RunTime:0.0137s ]
+SQL: select mid from Y_manger WHERE manger='赵艳平' [ RunTime:0.0132s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='10'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0141s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000013s ]
+
+[ 2018-01-30T08:30:32+08:00 ] 115.60.61.134 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='赵艳平' 
+                ORDER BY rm.menuid [ RunTime:0.0104s ]
+SQL: select mid from Y_manger WHERE manger='赵艳平' [ RunTime:0.0089s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='10'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0115s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000015s ]
+
+[ 2018-01-30T08:30:37+08:00 ] 115.60.61.134 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='赵艳平' 
+                ORDER BY rm.menuid [ RunTime:0.0108s ]
+SQL: select mid from Y_manger WHERE manger='赵艳平' [ RunTime:0.0093s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='10'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0111s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006107s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000015s ]
+
+[ 2018-01-30T08:30:57+08:00 ] 115.60.61.134 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: select * from Y_manger where manger='赵艳平' [ RunTime:0.0091s ]
+SQL: z_p_saletrendy 0, '2018-01-29', '2018-01-29', 0, '','','06-happygirl,08-xea,13-showtime,16-sunshine,18-shuai,eBay-A10-forestqing12,eBay-A6-vitalityang1,eBay-C1-taenha2017,eBay-C2-taenha','' [ RunTime:1.1769s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2018-01-30T08:30:57+08:00 ] 115.60.61.134 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2018-01-30T08:33:22+08:00 ] 115.60.63.10 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='乔文娟' 
+                ORDER BY rm.menuid [ RunTime:0.0113s ]
+SQL: select mid from Y_manger WHERE manger='乔文娟' [ RunTime:0.0111s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='14'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0214s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000311s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000357s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2018-01-30T08:33:36+08:00 ] 115.60.63.10 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: select * from Y_manger where manger='乔文娟' [ RunTime:0.0115s ]
+NOTIC: [8] Undefined index: saler /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: pingtai /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: department /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2018-01-29', '2018-01-29', 0, '','','01-buy,03-aatq,04-cheong,10-girlspring,eBay-04-chuangrong89,eBay-05-dangoyoung06,eBay-A7-redplumly3','' [ RunTime:1.1219s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002223s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2018-01-30T08:33:36+08:00 ] 115.60.63.10 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2018-01-30T08:34:19+08:00 ] 115.60.63.10 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000130s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='吕亚丽' 
+                ORDER BY rm.menuid [ RunTime:0.0118s ]
+SQL: select mid from Y_manger WHERE manger='吕亚丽' [ RunTime:0.0113s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 32 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE username='吕亚丽'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0185s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000014s ]
+
+[ 2018-01-30T08:34:41+08:00 ] 115.60.61.134 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='李书义' 
+                ORDER BY rm.menuid [ RunTime:0.0096s ]
+SQL: select mid from Y_manger WHERE manger='李书义' [ RunTime:0.0095s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 32 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE username='李书义'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0159s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006212s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000013s ]
+
+[ 2018-01-30T08:34:45+08:00 ] 115.60.63.10 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000120s ]
+SQL: select * from Y_manger where manger='吕亚丽' [ RunTime:0.0091s ]
+SQL: z_p_saletrendy 0, '2018-01-29', '2018-01-29', 0, '','','04-cheong,10-girlspring','' [ RunTime:1.4197s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2018-01-30T08:34:53+08:00 ] 115.60.63.10 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2018-01-30T08:34:55+08:00 ] 115.60.61.134 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: select * from Y_manger where manger='李书义' [ RunTime:0.0113s ]
+NOTIC: [8] Undefined index: saler /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: pingtai /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: department /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2018-01-01', '2018-01-30', 0, '','','07-smile,14-degage','' [ RunTime:3.5375s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2018-01-30T08:34:56+08:00 ] 115.60.61.134 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000114s ]
+
+[ 2018-01-30T08:37:26+08:00 ] 115.60.63.10 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='杨亚如' 
+                ORDER BY rm.menuid [ RunTime:0.0142s ]
+SQL: select mid from Y_manger WHERE manger='杨亚如' [ RunTime:0.0089s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='9'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0215s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000013s ]
+
+[ 2018-01-30T08:37:40+08:00 ] 115.60.63.10 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: select * from Y_manger where manger='杨亚如' [ RunTime:0.0136s ]
+NOTIC: [8] Undefined index: saler /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: pingtai /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: department /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2018-01-26', '2018-01-29', 0, '','','02-2008,05-5avip,07-smile,09-niceday,12-showgirl,14-degage,15-exao,eBay-19-sectionry-4','' [ RunTime:1.4466s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2018-01-30T08:37:40+08:00 ] 115.60.63.10 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2018-01-30T08:38:02+08:00 ] 115.60.63.10 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='吕亚丽' 
+                ORDER BY rm.menuid [ RunTime:0.0163s ]
+SQL: select mid from Y_manger WHERE manger='吕亚丽' [ RunTime:0.0114s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 32 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE username='吕亚丽'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0124s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000014s ]
+
+[ 2018-01-30T08:38:24+08:00 ] 115.60.63.10 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: select * from Y_manger where manger='吕亚丽' [ RunTime:0.0091s ]
+NOTIC: [8] Undefined index: pingtai /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: department /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2018-01-01', '2018-01-30', 2, '','','04-cheong,10-girlspring','' [ RunTime:3.5046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2018-01-30T08:38:25+08:00 ] 115.60.63.10 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000020s ]
+
+[ 2018-01-30T09:05:27+08:00 ] 58.246.226.254 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='赵艳平' 
+                ORDER BY rm.menuid [ RunTime:0.0126s ]
+SQL: select mid from Y_manger WHERE manger='赵艳平' [ RunTime:0.0097s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='10'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0105s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000015s ]
+
+[ 2018-01-30T09:10:30+08:00 ] 58.246.226.254 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='赵艳平' 
+                ORDER BY rm.menuid [ RunTime:0.0155s ]
+SQL: select mid from Y_manger WHERE manger='赵艳平' [ RunTime:0.0184s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='10'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0149s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000346s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000410s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015925s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2018-01-30T09:10:57+08:00 ] 58.246.226.254 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: select * from Y_manger where manger='赵艳平' [ RunTime:0.0149s ]
+SQL: select Dname FROM Y_manger m
+                                        LEFT JOIN Y_masterDepartment md ON md.mangerid=m.mid
+                                        LEFT JOIN Y_Department d on md.departmentid=d.did
+                                        WHERE manger='赵艳平' [ RunTime:0.0151s ]
+NOTIC: [8] Undefined index: saler /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: pingtai /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: suffix /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2018-01-01', '2018-01-30', 0, '','','','郑州分部eBay2
+' [ RunTime:9.2271s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002207s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2018-01-30T09:11:05+08:00 ] 58.246.226.254 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000029s ]
+
+[ 2018-01-30T09:12:13+08:00 ] 58.246.226.254 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: select * from Y_manger where manger='赵艳平' [ RunTime:0.0757s ]
+NOTIC: [8] Undefined index: saler /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: pingtai /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: department /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2018-01-01', '2018-01-30', 0, '','','06-happygirl,08-xea,13-showtime,16-sunshine,18-shuai,eBay-A10-forestqing12,eBay-A6-vitalityang1,eBay-C1-taenha2017,eBay-C2-taenha','' [ RunTime:6.3020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000028s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000011s ]
+
+[ 2018-01-30T09:12:14+08:00 ] 58.246.226.254 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2018-01-30T09:15:08+08:00 ] 58.246.226.254 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='杨亚如' 
+                ORDER BY rm.menuid [ RunTime:0.0118s ]
+SQL: select mid from Y_manger WHERE manger='杨亚如' [ RunTime:0.0096s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='9'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0117s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000015s ]
+
+[ 2018-01-30T09:15:47+08:00 ] 58.246.226.254 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000119s ]
+SQL: select * from Y_manger where manger='杨亚如' [ RunTime:0.0107s ]
+SQL: select Dname FROM Y_manger m
+                                        LEFT JOIN Y_masterDepartment md ON md.mangerid=m.mid
+                                        LEFT JOIN Y_Department d on md.departmentid=d.did
+                                        WHERE manger='杨亚如' [ RunTime:0.0152s ]
+NOTIC: [8] Undefined index: saler /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: pingtai /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: suffix /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2018-01-01', '2018-01-30', 0, '','','','郑州分部eBay1' [ RunTime:4.2236s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000054s ]
+
+[ 2018-01-30T09:15:49+08:00 ] 58.246.226.254 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2018-01-30T09:18:04+08:00 ] 58.246.226.254 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='赵艳平' 
+                ORDER BY rm.menuid [ RunTime:0.0123s ]
+SQL: select mid from Y_manger WHERE manger='赵艳平' [ RunTime:0.0120s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='10'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0131s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005525s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000014s ]
+
+[ 2018-01-30T09:25:14+08:00 ] 115.60.63.10 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
+NOTIC: [8] Undefined index: session_name /home/youran/jeany/netprofit/cms/Application/Home/Controller/ParentController.class.php 第 43 行.
+
+[ 2018-01-30T09:25:31+08:00 ] 115.60.63.10 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='吕亚丽' 
+                ORDER BY rm.menuid [ RunTime:0.0087s ]
+SQL: select mid from Y_manger WHERE manger='吕亚丽' [ RunTime:0.0085s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 32 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE username='吕亚丽'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0107s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000014s ]
+
+[ 2018-01-30T09:25:52+08:00 ] 115.60.63.10 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: select * from Y_manger where manger='吕亚丽' [ RunTime:0.0108s ]
+SQL: z_p_saletrendy 0, '2018-01-01', '2018-01-30', 0, '','','04-cheong,10-girlspring','' [ RunTime:3.3543s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002245s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+
+[ 2018-01-30T09:25:53+08:00 ] 115.60.63.10 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2018-01-30T09:28:19+08:00 ] 115.60.63.10 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Undefined index: session_name /home/youran/jeany/netprofit/cms/Application/Home/Controller/ParentController.class.php 第 43 行.
+
+[ 2018-01-30T09:35:17+08:00 ] 58.246.226.254 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='admin' 
+                ORDER BY rm.menuid [ RunTime:0.0147s ]
+SQL: select mid from Y_manger WHERE manger='admin' [ RunTime:0.0118s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 32 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                    LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                    LEFT JOIN Y_Department d ON d.Did=ud.did
+                    LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                    LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                    WHERE d.Dname is not NULL AND sp.suffix is not null
+                     ORDER BY ss.suffix ASC [ RunTime:0.0352s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000309s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2018-01-30T09:35:30+08:00 ] 58.246.226.254 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: select * from Y_manger where manger='admin' [ RunTime:0.0079s ]
+NOTIC: [8] Undefined index: saler /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: suffix /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: department /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2018-01-01', '2018-01-30', 0, '','eBay,Amazon,Joom,LAZADA,Shopee,SMT,Topbuy,Wish','','' [ RunTime:4.8587s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000015s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000026s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001492s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000013s ]
+
+[ 2018-01-30T09:35:31+08:00 ] 58.246.226.254 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2018-01-30T09:39:34+08:00 ] 115.60.63.10 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='杨亚如' 
+                ORDER BY rm.menuid [ RunTime:0.0115s ]
+SQL: select mid from Y_manger WHERE manger='杨亚如' [ RunTime:0.0108s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='9'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0129s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000030s ]
+
+[ 2018-01-30T09:40:04+08:00 ] 115.60.63.10 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: select * from Y_manger where manger='杨亚如' [ RunTime:0.0086s ]
+NOTIC: [8] Undefined index: saler /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: department /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2018-01-01', '2018-01-30', 0, '','','09-niceday','' [ RunTime:4.5818s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2018-01-30T09:40:07+08:00 ] 115.60.63.10 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
+
+[ 2018-01-30T09:40:48+08:00 ] 115.60.63.10 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: select * from Y_manger where manger='杨亚如' [ RunTime:0.0106s ]
+NOTIC: [8] Undefined index: saler /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: department /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2017-01-01', '2018-01-30', 0, '','','09-niceday','' [ RunTime:14.7458s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000024s ]
+
+[ 2018-01-30T09:40:48+08:00 ] 115.60.63.10 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2018-01-30T09:45:46+08:00 ] 58.246.226.254 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000221s ]
+SQL: select * from Y_manger where manger='admin' [ RunTime:0.0082s ]
+NOTIC: [8] Undefined index: saler /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: suffix /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: department /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2017-10-01', '2018-01-30', 0, '','eBay,Amazon,Joom,LAZADA,Shopee,SMT,Topbuy,Wish','','' [ RunTime:8.1516s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000031s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000016s ]
+
+[ 2018-01-30T09:45:46+08:00 ] 58.246.226.254 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000086s ]
+
+[ 2018-01-30T10:22:13+08:00 ] 58.246.226.254 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='程静' 
+                ORDER BY rm.menuid [ RunTime:0.0111s ]
+SQL: select mid from Y_manger WHERE manger='程静' [ RunTime:0.0099s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 32 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE username='程静'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0163s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006489s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000015s ]
+
+[ 2018-01-30T11:43:59+08:00 ] 58.246.226.254 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='admin' 
+                ORDER BY rm.menuid [ RunTime:0.0128s ]
+SQL: select mid from Y_manger WHERE manger='admin' [ RunTime:0.0120s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 32 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                    LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                    LEFT JOIN Y_Department d ON d.Did=ud.did
+                    LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                    LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                    WHERE d.Dname is not NULL AND sp.suffix is not null
+                     ORDER BY ss.suffix ASC [ RunTime:0.0324s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000313s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000366s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000071s ]
+
+[ 2018-01-30T12:56:35+08:00 ] 115.60.58.84 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='赵艳平' 
+                ORDER BY rm.menuid [ RunTime:0.0142s ]
+SQL: select mid from Y_manger WHERE manger='赵艳平' [ RunTime:0.0103s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='10'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0203s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000014s ]
+
+[ 2018-01-30T13:21:09+08:00 ] 58.246.226.254 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='admin' 
+                ORDER BY rm.menuid [ RunTime:0.0121s ]
+SQL: select mid from Y_manger WHERE manger='admin' [ RunTime:0.0140s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 32 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                    LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                    LEFT JOIN Y_Department d ON d.Did=ud.did
+                    LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                    LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                    WHERE d.Dname is not NULL AND sp.suffix is not null
+                     ORDER BY ss.suffix ASC [ RunTime:0.0315s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000313s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000372s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2018-01-30T13:21:48+08:00 ] 58.246.226.254 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: select * from Y_manger where manger='admin' [ RunTime:0.0098s ]
+NOTIC: [8] Undefined index: saler /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: suffix /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: department /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2018-01-01', '2018-01-29', 0, '','eBay,Amazon,Joom,LAZADA,Shopee,SMT,Topbuy,Wish','','' [ RunTime:22.4789s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000027s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001108s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000012s ]
+
+[ 2018-01-30T13:21:49+08:00 ] 58.246.226.254 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2018-01-30T13:34:03+08:00 ] 58.246.226.254 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined index: session_name /home/youran/jeany/netprofit/cms/Application/Home/Controller/ParentController.class.php 第 43 行.
+
+[ 2018-01-30T13:34:28+08:00 ] 58.246.226.254 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='admin' 
+                ORDER BY rm.menuid [ RunTime:0.0108s ]
+SQL: select mid from Y_manger WHERE manger='admin' [ RunTime:0.0086s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 32 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                    LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                    LEFT JOIN Y_Department d ON d.Did=ud.did
+                    LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                    LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                    WHERE d.Dname is not NULL AND sp.suffix is not null
+                     ORDER BY ss.suffix ASC [ RunTime:0.0164s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000312s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000362s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010865s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2018-01-30T14:09:09+08:00 ] 58.246.226.254 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='admin' 
+                ORDER BY rm.menuid [ RunTime:0.0319s ]
+SQL: select mid from Y_manger WHERE manger='admin' [ RunTime:0.0251s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 32 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                    LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                    LEFT JOIN Y_Department d ON d.Did=ud.did
+                    LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                    LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                    WHERE d.Dname is not NULL AND sp.suffix is not null
+                     ORDER BY ss.suffix ASC [ RunTime:0.0613s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000313s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000366s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2018-01-30T14:09:23+08:00 ] 58.246.226.254 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+SQL: select * from Y_manger where manger='admin' [ RunTime:0.0088s ]
+NOTIC: [8] Undefined index: saler /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: suffix /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: department /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2018-01-01', '2018-01-30', 0, '','eBay,Amazon,Joom,LAZADA,Shopee,SMT,Topbuy,Wish','','' [ RunTime:5.6528s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000030s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001040s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000015s ]
+
+[ 2018-01-30T14:09:24+08:00 ] 58.246.226.254 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2018-01-30T14:10:27+08:00 ] 58.246.226.254 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL: select * from Y_manger where manger='admin' [ RunTime:0.0104s ]
+NOTIC: [8] Undefined index: saler /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: pingtai /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: suffix /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2018-01-01', '2018-01-30', 0, '','','','运营一部,运营二部,运营三部,运营五部,运营六部,部门未分配,郑州分部eBay1,郑州分部eBay2
+,郑州分部Shopee
+' [ RunTime:5.2822s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000028s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000014s ]
+
+[ 2018-01-30T14:10:28+08:00 ] 58.246.226.254 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000019s ]
+
+[ 2018-01-30T14:24:02+08:00 ] 58.246.226.254 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='林秀云' 
+                ORDER BY rm.menuid [ RunTime:0.0094s ]
+SQL: select mid from Y_manger WHERE manger='林秀云' [ RunTime:0.0087s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 32 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE username='林秀云'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0208s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000016s ]
+
+[ 2018-01-30T14:24:05+08:00 ] 58.246.226.254 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='林秀云' 
+                ORDER BY rm.menuid [ RunTime:0.0251s ]
+SQL: select mid from Y_manger WHERE manger='林秀云' [ RunTime:0.0181s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 32 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE username='林秀云'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0127s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000014s ]
+
+[ 2018-01-30T14:24:14+08:00 ] 58.246.226.254 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: select * from Y_manger where manger='林秀云' [ RunTime:0.0105s ]
+NOTIC: [8] Undefined index: pingtai /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: suffix /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: department /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2018-01-01', '2018-01-30', 0, '林秀云','','','' [ RunTime:4.0722s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2018-01-30T14:24:17+08:00 ] 58.246.226.254 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000112s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000148s ]
+
+[ 2018-01-30T14:31:58+08:00 ] 58.246.226.254 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000071s ]
+
+[ 2018-01-30T14:47:20+08:00 ] 115.60.63.10 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined index: session_name /home/youran/jeany/netprofit/cms/Application/Home/Controller/ParentController.class.php 第 43 行.
+
+[ 2018-01-30T14:47:58+08:00 ] 58.246.226.254 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: select * from Y_manger where manger='admin' [ RunTime:0.0088s ]
+NOTIC: [8] Undefined index: saler /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: pingtai /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: suffix /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2018-01-01', '2018-01-30', 0, '','','','运营一部,运营二部,运营三部,运营五部,运营六部,部门未分配,郑州分部eBay1,郑州分部eBay2
+,郑州分部Shopee
+' [ RunTime:3.2380s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2018-01-30T14:50:59+08:00 ] 58.246.226.254 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='admin' 
+                ORDER BY rm.menuid [ RunTime:0.0128s ]
+SQL: select mid from Y_manger WHERE manger='admin' [ RunTime:0.0118s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 32 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                    LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                    LEFT JOIN Y_Department d ON d.Did=ud.did
+                    LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                    LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                    WHERE d.Dname is not NULL AND sp.suffix is not null
+                     ORDER BY ss.suffix ASC [ RunTime:0.0194s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000310s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000120s ]
+
+[ 2018-01-30T14:51:14+08:00 ] 58.246.226.254 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: select * from Y_manger where manger='admin' [ RunTime:0.0087s ]
+NOTIC: [8] Undefined index: saler /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: suffix /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: department /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2018-01-01', '2018-01-30', 0, '','eBay,Amazon,Joom,LAZADA,Shopee,SMT,Topbuy,Wish','','' [ RunTime:2.7669s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000026s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000015s ]
+
+[ 2018-01-30T14:51:15+08:00 ] 58.246.226.254 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000071s ]
+
+[ 2018-01-30T14:53:12+08:00 ] 58.246.226.254 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2018-01-30T15:55:52+08:00 ] 58.246.226.254 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='admin' 
+                ORDER BY rm.menuid [ RunTime:0.0090s ]
+SQL: select mid from Y_manger WHERE manger='admin' [ RunTime:0.0077s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 32 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                    LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                    LEFT JOIN Y_Department d ON d.Did=ud.did
+                    LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                    LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                    WHERE d.Dname is not NULL AND sp.suffix is not null
+                     ORDER BY ss.suffix ASC [ RunTime:0.0136s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000310s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000358s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2018-01-30T15:57:10+08:00 ] 58.246.226.254 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: select * from Y_manger where manger='admin' [ RunTime:0.0136s ]
+NOTIC: [8] Undefined index: saler /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: pingtai /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: suffix /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: department /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2017-01-01', '2017-01-31', 0, '','','','' [ RunTime:2.8417s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2018-01-30T15:57:13+08:00 ] 58.246.226.254 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2018-01-30T15:57:28+08:00 ] 58.246.226.254 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: select * from Y_manger where manger='admin' [ RunTime:0.0074s ]
+NOTIC: [8] Undefined index: saler /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: suffix /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: department /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2017-01-01', '2017-01-31', 0, '','eBay,Amazon,Joom,LAZADA,Shopee,SMT,Topbuy,Wish','','' [ RunTime:3.1122s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000015s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000026s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000013s ]
+
+[ 2018-01-30T15:57:29+08:00 ] 58.246.226.254 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2018-01-30T16:31:21+08:00 ] 58.246.226.254 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='admin' 
+                ORDER BY rm.menuid [ RunTime:0.0111s ]
+SQL: select mid from Y_manger WHERE manger='admin' [ RunTime:0.0108s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 32 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                    LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                    LEFT JOIN Y_Department d ON d.Did=ud.did
+                    LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                    LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                    WHERE d.Dname is not NULL AND sp.suffix is not null
+                     ORDER BY ss.suffix ASC [ RunTime:0.0301s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000309s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2018-01-30T16:31:33+08:00 ] 58.246.226.254 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='admin' 
+                ORDER BY rm.menuid [ RunTime:0.0134s ]
+SQL: select mid from Y_manger WHERE manger='admin' [ RunTime:0.0120s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 32 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                    LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                    LEFT JOIN Y_Department d ON d.Did=ud.did
+                    LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                    LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                    WHERE d.Dname is not NULL AND sp.suffix is not null
+                     ORDER BY ss.suffix ASC [ RunTime:0.0175s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000313s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000363s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010845s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2018-01-30T16:31:48+08:00 ] 58.246.226.254 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+SQL: select * from Y_manger where manger='admin' [ RunTime:0.0124s ]
+NOTIC: [8] Undefined index: saler /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: suffix /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: department /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2018-01-01', '2018-01-30', 0, '','Joom','','' [ RunTime:4.9506s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2018-01-30T16:31:49+08:00 ] 58.246.226.254 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
+
+[ 2018-01-30T16:33:52+08:00 ] 58.246.226.254 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='黄荣斌' 
+                ORDER BY rm.menuid [ RunTime:0.0093s ]
+SQL: select mid from Y_manger WHERE manger='黄荣斌' [ RunTime:0.0091s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='13'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0218s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000015s ]
+
+[ 2018-01-30T16:34:13+08:00 ] 58.246.226.254 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: select * from Y_manger where manger='黄荣斌' [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: pingtai /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: suffix /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: department /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2018-01-01', '2018-01-29', 0, '黄荣斌,林秀云','','','' [ RunTime:3.5209s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2018-01-30T16:34:57+08:00 ] 58.246.226.254 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000071s ]
+
+[ 2018-01-30T16:37:25+08:00 ] 58.246.226.254 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: select * from Y_manger where manger='黄荣斌' [ RunTime:0.0099s ]
+NOTIC: [8] Undefined index: pingtai /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: suffix /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: department /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2018-01-01', '2018-01-29', 0, '黄荣斌,李利霞,林秀云','','','' [ RunTime:2.3195s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000026s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002639s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002663s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000014s ]
+
+[ 2018-01-30T16:37:25+08:00 ] 58.246.226.254 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2018-01-30T16:40:02+08:00 ] 58.246.226.254 /salestrend/trend/rolebase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: select * from Y_manger where manger='黄荣斌' [ RunTime:0.0118s ]
+NOTIC: [8] Undefined index: pingtai /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: suffix /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+NOTIC: [8] Undefined index: department /home/youran/jeany/netprofit/cms/Application/Salestrend/Controller/TrendController.class.php 第 483 行.
+SQL: z_p_saletrendy 0, '2018-01-01', '2018-01-29', 0, '胡宁','','','' [ RunTime:2.3544s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2018-01-30T16:40:03+08:00 ] 58.246.226.254 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2018-01-30T16:44:49+08:00 ] 58.246.226.254 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='黄荣斌' 
+                ORDER BY rm.menuid [ RunTime:0.0126s ]
+SQL: select mid from Y_manger WHERE manger='黄荣斌' [ RunTime:0.0126s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='13'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0147s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000015s ]
+
+[ 2018-01-30T16:44:53+08:00 ] 58.246.226.254 /Salestrend/Trend/getCondition
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='黄荣斌' 
+                ORDER BY rm.menuid [ RunTime:0.0111s ]
+SQL: select mid from Y_manger WHERE manger='黄荣斌' [ RunTime:0.0109s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='13'
+                                        ORDER BY ss.suffix ASC [ RunTime:0.0134s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000313s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000360s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2018-01-30T17:05:19+08:00 ] 58.246.226.254 /salestrend/trend/sales
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000072s ]
+

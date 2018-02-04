@@ -1,0 +1,923 @@
+[ 2018-01-31T08:30:18+08:00 ] 115.60.63.10 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+NOTIC: [8] Undefined index: session_name /home/youran/jeany/netprofit/cms/Application/Home/Controller/ParentController.class.php 第 43 行.
+
+[ 2018-01-31T08:31:18+08:00 ] 223.167.152.124 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+NOTIC: [8] Undefined index: session_name /home/youran/jeany/netprofit/cms/Application/Home/Controller/ParentController.class.php 第 43 行.
+
+[ 2018-01-31T08:33:52+08:00 ] 101.226.65.107 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined index: session_name /home/youran/jeany/netprofit/cms/Application/Home/Controller/ParentController.class.php 第 43 行.
+
+[ 2018-01-31T08:48:49+08:00 ] 115.60.63.10 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='杨亚如' 
+                ORDER BY rm.menuid [ RunTime:0.0122s ]
+SQL: select mid from Y_manger WHERE manger='杨亚如' [ RunTime:0.0114s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='9'  ORDER BY ss.suffix ASC  [ RunTime:0.0201s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000015s ]
+
+[ 2018-01-31T08:49:33+08:00 ] 115.60.63.10 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='杨亚如' 
+                ORDER BY rm.menuid [ RunTime:0.0166s ]
+SQL: select mid from Y_manger WHERE manger='杨亚如' [ RunTime:0.0137s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='9'  ORDER BY ss.suffix ASC  [ RunTime:0.0109s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000316s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000363s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
+
+[ 2018-01-31T08:57:10+08:00 ] 58.246.226.254 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='admin' 
+                ORDER BY rm.menuid [ RunTime:0.0136s ]
+SQL: select mid from Y_manger WHERE manger='admin' [ RunTime:0.0116s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Saler/Controller/SalerController.class.php 第 30 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                    LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                    LEFT JOIN Y_Department d ON d.Did=ud.did
+                    LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                    LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                    WHERE d.Dname is not NULL AND sp.suffix is not null  ORDER BY ss.suffix ASC   [ RunTime:0.0440s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000315s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000364s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2018-01-31T08:58:11+08:00 ] 101.226.66.181 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+NOTIC: [8] Undefined index: session_name /home/youran/jeany/netprofit/cms/Application/Home/Controller/ParentController.class.php 第 43 行.
+
+[ 2018-01-31T09:10:47+08:00 ] 115.60.61.134 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Undefined index: session_name /home/youran/jeany/netprofit/cms/Application/Home/Controller/ParentController.class.php 第 43 行.
+
+[ 2018-01-31T09:10:51+08:00 ] 115.60.61.134 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='陈立秀' 
+                ORDER BY rm.menuid [ RunTime:0.0101s ]
+SQL: select mid from Y_manger WHERE manger='陈立秀' [ RunTime:0.0088s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Saler/Controller/SalerController.class.php 第 30 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE username='陈立秀'
+                                         ORDER BY ss.suffix ASC   [ RunTime:0.0164s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000014s ]
+
+[ 2018-01-31T09:53:06+08:00 ] 58.246.226.254 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined index: session_name /home/youran/jeany/netprofit/cms/Application/Home/Controller/ParentController.class.php 第 43 行.
+
+[ 2018-01-31T09:53:16+08:00 ] 58.246.226.254 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='胡宁' 
+                ORDER BY rm.menuid [ RunTime:0.0136s ]
+SQL: select mid from Y_manger WHERE manger='胡宁' [ RunTime:0.0126s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Saler/Controller/SalerController.class.php 第 30 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE username='胡宁'
+                                         ORDER BY ss.suffix ASC   [ RunTime:0.0238s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000015s ]
+
+[ 2018-01-31T09:53:16+08:00 ] 58.246.226.254 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='胡宁' 
+                ORDER BY rm.menuid [ RunTime:0.0109s ]
+SQL: select mid from Y_manger WHERE manger='胡宁' [ RunTime:0.0109s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Saler/Controller/SalerController.class.php 第 30 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE username='胡宁'
+                                         ORDER BY ss.suffix ASC   [ RunTime:0.0132s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000584s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000656s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000102s ]
+
+[ 2018-01-31T09:55:39+08:00 ] 58.246.226.254 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] Undefined index: session_name /home/youran/jeany/netprofit/cms/Application/Home/Controller/ParentController.class.php 第 43 行.
+
+[ 2018-01-31T09:55:48+08:00 ] 58.246.226.254 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='李利霞' 
+                ORDER BY rm.menuid [ RunTime:0.0155s ]
+SQL: select mid from Y_manger WHERE manger='李利霞' [ RunTime:0.0145s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Saler/Controller/SalerController.class.php 第 30 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE username='李利霞'
+                                         ORDER BY ss.suffix ASC   [ RunTime:0.0231s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000014s ]
+
+[ 2018-01-31T10:05:42+08:00 ] 58.246.226.254 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000135s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='韩珍' 
+                ORDER BY rm.menuid [ RunTime:0.0440s ]
+SQL: select mid from Y_manger WHERE manger='韩珍' [ RunTime:0.0556s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='2'  ORDER BY ss.suffix ASC  [ RunTime:0.0650s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002757s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000014s ]
+
+[ 2018-01-31T10:07:09+08:00 ] 58.246.226.254 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='缪政勇' 
+                ORDER BY rm.menuid [ RunTime:0.0114s ]
+SQL: select mid from Y_manger WHERE manger='缪政勇' [ RunTime:0.0147s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Saler/Controller/SalerController.class.php 第 30 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE username='缪政勇'
+                                         ORDER BY ss.suffix ASC   [ RunTime:0.0249s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000014s ]
+
+[ 2018-01-31T10:17:35+08:00 ] 58.246.226.254 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='程静' 
+                ORDER BY rm.menuid [ RunTime:0.0246s ]
+SQL: select mid from Y_manger WHERE manger='程静' [ RunTime:0.0172s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Saler/Controller/SalerController.class.php 第 30 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE username='程静'
+                                         ORDER BY ss.suffix ASC   [ RunTime:0.0307s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000014s ]
+
+[ 2018-01-31T10:49:35+08:00 ] 115.60.61.134 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='李书义' 
+                ORDER BY rm.menuid [ RunTime:0.0102s ]
+SQL: select mid from Y_manger WHERE manger='李书义' [ RunTime:0.0095s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Saler/Controller/SalerController.class.php 第 30 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE username='李书义'
+                                         ORDER BY ss.suffix ASC   [ RunTime:0.0173s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005864s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000014s ]
+
+[ 2018-01-31T10:49:36+08:00 ] 115.60.61.134 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='李书义' 
+                ORDER BY rm.menuid [ RunTime:0.0102s ]
+SQL: select mid from Y_manger WHERE manger='李书义' [ RunTime:0.0090s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Saler/Controller/SalerController.class.php 第 30 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE username='李书义'
+                                         ORDER BY ss.suffix ASC   [ RunTime:0.0106s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000316s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000365s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+
+[ 2018-01-31T10:58:06+08:00 ] 58.246.226.254 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='admin' 
+                ORDER BY rm.menuid [ RunTime:0.0484s ]
+SQL: select mid from Y_manger WHERE manger='admin' [ RunTime:0.0621s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Saler/Controller/SalerController.class.php 第 30 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                    LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                    LEFT JOIN Y_Department d ON d.Did=ud.did
+                    LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                    LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                    WHERE d.Dname is not NULL AND sp.suffix is not null  ORDER BY ss.suffix ASC   [ RunTime:0.0323s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000316s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000367s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2018-01-31T13:11:42+08:00 ] 115.60.61.134 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='赵艳平' 
+                ORDER BY rm.menuid [ RunTime:0.0153s ]
+SQL: select mid from Y_manger WHERE manger='赵艳平' [ RunTime:0.0121s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='10'  ORDER BY ss.suffix ASC  [ RunTime:0.0221s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006207s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000013s ]
+
+[ 2018-01-31T13:17:41+08:00 ] 115.60.63.10 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined index: session_name /home/youran/jeany/netprofit/cms/Application/Home/Controller/ParentController.class.php 第 43 行.
+
+[ 2018-01-31T13:18:18+08:00 ] 115.60.63.10 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='李梦可' 
+                ORDER BY rm.menuid [ RunTime:0.0150s ]
+SQL: select mid from Y_manger WHERE manger='李梦可' [ RunTime:0.0163s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Saler/Controller/SalerController.class.php 第 30 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE username='李梦可'
+                                         ORDER BY ss.suffix ASC   [ RunTime:0.0215s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000012s ]
+
+[ 2018-01-31T15:55:48+08:00 ] 58.246.226.254 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Undefined index: session_name /home/youran/jeany/netprofit/cms/Application/Home/Controller/ParentController.class.php 第 43 行.
+
+[ 2018-01-31T15:55:53+08:00 ] 58.246.226.254 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='胡宁' 
+                ORDER BY rm.menuid [ RunTime:0.0125s ]
+SQL: select mid from Y_manger WHERE manger='胡宁' [ RunTime:0.0132s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Saler/Controller/SalerController.class.php 第 30 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE username='胡宁'
+                                         ORDER BY ss.suffix ASC   [ RunTime:0.0261s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000014s ]
+
+[ 2018-01-31T16:28:59+08:00 ] 58.246.226.254 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='admin' 
+                ORDER BY rm.menuid [ RunTime:0.0087s ]
+SQL: select mid from Y_manger WHERE manger='admin' [ RunTime:0.0068s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Saler/Controller/SalerController.class.php 第 30 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                    LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                    LEFT JOIN Y_Department d ON d.Did=ud.did
+                    LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                    LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                    WHERE d.Dname is not NULL AND sp.suffix is not null  ORDER BY ss.suffix ASC   [ RunTime:0.0288s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000316s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000365s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2018-01-31T16:56:27+08:00 ] 115.60.61.134 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='李书义' 
+                ORDER BY rm.menuid [ RunTime:0.0333s ]
+SQL: select mid from Y_manger WHERE manger='李书义' [ RunTime:0.0113s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Saler/Controller/SalerController.class.php 第 30 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE username='李书义'
+                                         ORDER BY ss.suffix ASC   [ RunTime:0.0187s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005329s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000014s ]
+
+[ 2018-01-31T16:59:34+08:00 ] 116.226.124.188 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined index: session_name /home/youran/jeany/netprofit/cms/Application/Home/Controller/ParentController.class.php 第 43 行.
+
+[ 2018-01-31T17:02:10+08:00 ] 101.81.241.201 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='宋文杰' 
+                ORDER BY rm.menuid [ RunTime:0.0133s ]
+SQL: select mid from Y_manger WHERE manger='宋文杰' [ RunTime:0.0122s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='5'  ORDER BY ss.suffix ASC  [ RunTime:0.0460s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003495s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000017s ]
+
+[ 2018-01-31T17:44:28+08:00 ] 58.246.226.254 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='刘世丽' 
+                ORDER BY rm.menuid [ RunTime:0.0112s ]
+SQL: select mid from Y_manger WHERE manger='刘世丽' [ RunTime:0.0099s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Saler/Controller/SalerController.class.php 第 30 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE username='刘世丽'
+                                         ORDER BY ss.suffix ASC   [ RunTime:0.0179s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000014s ]
+
+[ 2018-01-31T18:03:57+08:00 ] 58.246.226.254 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='胡方芹' 
+                ORDER BY rm.menuid [ RunTime:0.0120s ]
+SQL: select mid from Y_manger WHERE manger='胡方芹' [ RunTime:0.0125s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Saler/Controller/SalerController.class.php 第 30 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE username='胡方芹'
+                                         ORDER BY ss.suffix ASC   [ RunTime:0.0340s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006235s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000015s ]
+
+[ 2018-01-31T18:04:56+08:00 ] 115.60.61.134 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='赵艳平' 
+                ORDER BY rm.menuid [ RunTime:0.0113s ]
+SQL: select mid from Y_manger WHERE manger='赵艳平' [ RunTime:0.0109s ]
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE mangerid='10'  ORDER BY ss.suffix ASC  [ RunTime:0.0202s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006286s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000015s ]
+
+[ 2018-01-31T18:27:27+08:00 ] 58.246.226.254 /Saler/Saler/show_saler_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='朱晶晶' 
+                ORDER BY rm.menuid [ RunTime:0.0143s ]
+SQL: select mid from Y_manger WHERE manger='朱晶晶' [ RunTime:0.0116s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Saler/Controller/SalerController.class.php 第 30 行.
+SQL: SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                                        LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                                        LEFT JOIN Y_Department d ON d.Did=ud.did
+                                        LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                                        LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                                        WHERE username='朱晶晶'
+                                         ORDER BY ss.suffix ASC   [ RunTime:0.0182s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000332s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000380s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+

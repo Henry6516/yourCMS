@@ -1,0 +1,98 @@
+[ 2018-02-03T14:09:29+08:00 ] 223.88.148.255 /Ebay/PossessMan2/show_psm_page
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='admin'
+                ORDER BY rm.menuid [ RunTime:0.0364s ]
+SQL: select mid from Y_manger WHERE manger='admin' [ RunTime:0.0393s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Ebay/Controller/PossessMan2Controller.class.php 第 27 行.
+SQL: SELECT DISTINCT u.username FROM Y_user u
+                              LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                              LEFT JOIN Y_role r  on r.roleid=ur.roleid
+                              WHERE r.roleName='采购员' [ RunTime:0.0165s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000030s ]
+
+[ 2018-02-03T14:09:47+08:00 ] 223.88.148.255 /ebay/possess_man2/purchase_netprofit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: select * from Y_manger WHERE manger='admin' [ RunTime:0.0093s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Ebay/Controller/PossessMan2Controller.class.php 第 71 行.
+SQL: SELECT DISTINCT u.username FROM Y_user u
+                                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                                LEFT JOIN Y_role r  on r.roleid=ur.roleid
+                                LEFT JOIN Y_userDepartment ud ON ud.Uid=u.Uid
+                                LEFT JOIN Y_Department d ON d.Did=ud.Did
+                                LEFT JOIN Y_masterDepartment md on md.departmentid=d.Did
+                                LEFT JOIN Y_manger m ON md.mangerid=m.mid
+                                WHERE r.roleName='采购员' [ RunTime:0.0172s ]
+NOTIC: [8] Undefined variable: value /home/youran/jeany/netprofit/cms/Application/Ebay/Controller/PossessMan2Controller.class.php 第 106 行.
+SQL: exec P_YR_PossessMan2Profit '1','2018-01-01','2018-01-31','','','0','eBay','','','','','','0','0','0',0 [ RunTime:7.3206s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005779s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000066s ]
+
+[ 2018-02-03T14:11:46+08:00 ] 223.88.148.255 /ebay/possess_man2/purchase_netprofit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: select * from Y_manger WHERE manger='admin' [ RunTime:0.0080s ]
+NOTIC: [8] Undefined offset: 0 /home/youran/jeany/netprofit/cms/Application/Ebay/Controller/PossessMan2Controller.class.php 第 71 行.
+SQL: SELECT DISTINCT u.username FROM Y_user u
+                                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                                LEFT JOIN Y_role r  on r.roleid=ur.roleid
+                                LEFT JOIN Y_userDepartment ud ON ud.Uid=u.Uid
+                                LEFT JOIN Y_Department d ON d.Did=ud.Did
+                                LEFT JOIN Y_masterDepartment md on md.departmentid=d.Did
+                                LEFT JOIN Y_manger m ON md.mangerid=m.mid
+                                WHERE r.roleName='采购员' [ RunTime:0.0101s ]
+NOTIC: [8] Undefined variable: value /home/youran/jeany/netprofit/cms/Application/Ebay/Controller/PossessMan2Controller.class.php 第 106 行.
+SQL: exec P_YR_PossessMan2Profit '1','2018-01-01','2018-01-31','','','0','eBay','','','','','','0','0','0',0 [ RunTime:3.4103s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
