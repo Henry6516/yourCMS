@@ -4,3 +4,5 @@
 .htaccess
 README.md
 *.log
+/Uploads/
+/Application/Runtime/

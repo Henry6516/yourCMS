@@ -20,7 +20,7 @@
         </tr>
     </table>
 </form>
-<a href="../../../../Y_offlineclearn.xls">导出销售死库模板</a>
+<a href="../../../../Y_offlineclearn.xlsx">导出销售死库模板</a>
 <br>
 <br>
 <br>

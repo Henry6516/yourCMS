@@ -19,21 +19,21 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
     <meta content="" name="author" />
     <meta name="MobileOptimized" content="320">
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <link href="./Public/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-    <link href="./Public/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link href="./Public/assets/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+    <link href="/Public/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/Public/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/Public/assets/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
     <!-- END GLOBAL MANDATORY STYLES -->
     <!-- BEGIN PAGE LEVEL STYLES -->
-    <link rel="stylesheet" type="text/css" href="./Public/assets/plugins/select2/select2_metro.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/assets/plugins/select2/select2_metro.css" />
     <!-- END PAGE LEVEL SCRIPTS -->
     <!-- BEGIN THEME STYLES -->
-    <link href="./Public/assets/css/style-metronic.css" rel="stylesheet" type="text/css"/>
-    <link href="./Public/assets/css/style.css" rel="stylesheet" type="text/css"/>
-    <link href="./Public/assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
-    <link href="./Public/assets/css/plugins.css" rel="stylesheet" type="text/css"/>
-    <link href="./Public/assets/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/>
-    <link href="./Public/assets/css/pages/login-soft.css" rel="stylesheet" type="text/css"/>
-    <link href="./Public/assets/css/custom.css" rel="stylesheet" type="text/css"/>
+    <link href="/Public/assets/css/style-metronic.css" rel="stylesheet" type="text/css"/>
+    <link href="/Public/assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="/Public/assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+    <link href="/Public/assets/css/plugins.css" rel="stylesheet" type="text/css"/>
+    <link href="/Public/assets/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+    <link href="/Public/assets/css/pages/login-soft.css" rel="stylesheet" type="text/css"/>
+    <link href="/Public/assets/css/custom.css" rel="stylesheet" type="text/css"/>
     <!-- END THEME STYLES -->
     <link rel="shortcut icon" href="favicon.ico" />
 </head>
@@ -41,7 +41,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 <body class="login">
 <!-- BEGIN LOGO -->
 <div class="logo">
-    <!--<img src="./Public/assets/img/logo-big.png" alt="" />-->
+    <!--<img src="/Public/assets/img/logo-big.png" alt="" />-->
 </div>
 <!-- END LOGO -->
 <!-- BEGIN LOGIN -->
@@ -436,25 +436,25 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
 <!-- BEGIN CORE PLUGINS -->
 <!--[if lt IE 9]>
-<script src="./Public/assets/plugins/respond.min.js"></script>
-<script src="./Public/assets/plugins/excanvas.min.js"></script>
+<script src="/Public/assets/plugins/respond.min.js"></script>
+<script src="/Public/assets/plugins/excanvas.min.js"></script>
 <![endif]-->
-<script src="./Public/assets/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
-<script src="./Public/assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
-<script src="./Public/assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="./Public/assets/plugins/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js" type="text/javascript" ></script>
-<script src="./Public/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
-<script src="./Public/assets/plugins/jquery.blockui.min.js" type="text/javascript"></script>
-<script src="./Public/assets/plugins/jquery.cookie.min.js" type="text/javascript"></script>
-<script src="./Public/assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript" ></script>
+<script src="/Public/assets/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="/Public/assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<script src="/Public/assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/Public/assets/plugins/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js" type="text/javascript" ></script>
+<script src="/Public/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="/Public/assets/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="/Public/assets/plugins/jquery.cookie.min.js" type="text/javascript"></script>
+<script src="/Public/assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript" ></script>
 <!-- END CORE PLUGINS -->
 <!-- BEGIN PAGE LEVEL PLUGINS -->
-<script src="./Public/assets/plugins/jquery-validation/dist/jquery.validate.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="./Public/assets/plugins/select2/select2.min.js"></script>
+<script src="/Public/assets/plugins/jquery-validation/dist/jquery.validate.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/Public/assets/plugins/select2/select2.min.js"></script>
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
-<script src="./Public/assets/scripts/app.js" type="text/javascript"></script>
-<script src="./Public/assets/scripts/login.js" type="text/javascript"></script>
+<script src="/Public/assets/scripts/app.js" type="text/javascript"></script>
+<script src="/Public/assets/scripts/login.js" type="text/javascript"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
 <script>
     jQuery(document).ready(function() {

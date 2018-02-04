@@ -57,6 +57,7 @@ class SalerController extends ParentController
 
             $var =  $this->fetch_saler_data($form_condata);
         }
+	sort($var['department']);
 
         $this->assign('result',$result);                                                                                        //nev侧边栏 对着的模块
         $this->assign('department',$var['department']);                                                                         //部门
