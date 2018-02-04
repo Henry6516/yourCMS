@@ -5,7 +5,7 @@
 # IntelliJ project files
 .idea
 out
-gen
+gengit@github.com:Jeanypure/urcms.git
 Application/Runtime/
 /Application/Common/Conf/config.php
 /Application/Demo/Conf/
