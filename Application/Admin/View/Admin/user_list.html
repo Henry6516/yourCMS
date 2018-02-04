@@ -1,0 +1,102 @@
+<include file="Public/admin_header"/>
+
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+
+    <include file="Public/admin_nav"/>
+    <!-- BEGIN PAGE -->
+    <!-- BEGIN PAGE -->
+    <div class="page-content">
+
+        <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+
+        <!-- BEGIN PAGE CONTENT-->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                <div class="portlet box blue">
+                    <div class="portlet-title">
+                        <div class="caption"><i class="fa fa-edit"></i>管理用户</div>
+                        <div class="tools">
+                            <a href="javascript:;" class="collapse"></a>
+                            <!--<a href="#portlet-config" data-toggle="modal" class="config"></a>-->
+                            <!--<a href="javascript:;" class="reload"></a>-->
+                            <a href="javascript:;" class="remove"></a>
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <div class="table-toolbar">
+                            <div class="btn-group">
+                                <button id="sample_editable_1_new" class="btn green">
+                                    添加用户 <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="btn-group pull-right">
+                                <button class="btn dropdown-toggle" data-toggle="dropdown">Tools <i class="fa fa-angle-down"></i>
+                                </button>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="#">Print</a></li>
+                                    <li><a href="#">Save as PDF</a></li>
+                                    <li><a href="#">Export to Excel</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <table class="table table-striped table-hover table-bordered" id="sample_editable_1">
+                            <thead>
+                            <tr>
+
+                                <th  disabled="disabled">ID</th>
+                                <th>用户名</th>
+                                <th>密码</th>
+                                <th>部门</th>
+                                <th>编辑</th>
+                                <th>删除</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <volist name="data" id="vo">
+                                <tr >
+
+                                    <td  disabled="disabled">{$vo.uid}</td>
+                                    <td>{$vo.username}</td>
+                                    <td>{$vo.password}</td>
+                                    <td>{$vo.dname}</td>
+                                    <td><a class="edit" href="javascript:;">编辑</a></td>
+                                    <td><a class="delete" href="javascript:;">删除</a></td>
+
+
+                                </tr>
+                            </volist>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- END EXAMPLE TABLE PORTLET-->
+            </div>
+        </div>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+    <!-- END PAGE -->
+    <!-- END PAGE -->
+
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->
+<div class="footer">
+    <div class="footer-inner">
+        Uran
+    </div>
+    <div class="footer-tools">
+			<span class="go-top">
+			<i class="fa fa-angle-up"></i>
+			</span>
+    </div>
+</div>
+<!-- END FOOTER -->
+
+
+<include file="user_script"/>
+

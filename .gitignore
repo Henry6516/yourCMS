@@ -1,0 +1,21 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+out
+gen
+Application/Runtime/
+/Application/Common/Conf/config.php
+/Application/Demo/Conf/
+/Application/Developer/Conf/
+/Application/Ebay/Conf/
+/Application/Exchange/Conf/
+/Application/Home/Conf/
+/Application/Possess/Conf/
+/Application/Purchase/Conf/
+/Application/Saler/Conf/
+/Application/Salestrend/Conf/
+/Uploads/
+/Application/Back-Runtime/

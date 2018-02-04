@@ -1,0 +1,42 @@
+
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap-select.min.js"></script>
+<script src="__PUBLIC__/js/moment.min.js"></script>
+<script src="__PUBLIC__/js/zh-cn.js"></script>
+<script>
+    $(document).ready(function(){
+        //开发毛利表
+        $('#dev-netprofit-btn').click(function(){
+            $('.page').hide();
+            $('.devcondition-page').show();
+            $('#dev-salername-select').empty();
+            $.ajax({
+                url: "{:U('Demo/index/index')}",
+                success:function(da){
+                    console.log(typeof(da));
+//                    var haha = eval('(' + data + ')'); //字符串转 对象
+                    var haha = JSON.parse(da);
+                    $('#dev-salername-select').empty();
+                    $('#dev-salername-select').append("<option value='"+''+"'>"+''+"</option>");
+                    $.each(haha,function(index,n){
+
+                        $('#dev-salername-select').append("<option value='"+n.username+"'>"+n.username+"</option>"); //为Select追加一个Option(下拉项)
+                    });
+
+                }
+            })
+
+
+        })
+    });
+
+    //nav切换
+    $('#saler-netprofit-btn').click(function(){
+
+        $('.page').show();
+        $('.devcondition-page').hide();
+
+    })
+</script>
