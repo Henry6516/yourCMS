@@ -62,7 +62,6 @@ class SalerController extends ParentController
             $arr = array_slice($var['department'],0,8, true);
             $var['department'] = $arr + ['12' => $var['department'][12]] + ['11' => $var['department'][11]];
         }
-        $var['department'] = $arr;
         $this->assign('result',$result);                                                                                        //nev侧边栏 对着的模块
         $this->assign('department',$var['department']);                                                                         //部门
         $this->assign('suffix',$var['suffix']);                                                                                 //账号
