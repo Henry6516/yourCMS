@@ -57,9 +57,12 @@ class SalerController extends ParentController
 
             $var =  $this->fetch_saler_data($form_condata);
         }
-        //处理部门数组
-        $arr = array_slice($var['department'],0,8, true);
-        $var['department'] = $arr + ['12' => $var['department'][12]] + ['11' => $var['department'][11]];
+        //处理部门数组(全部部门)
+        if(count($var['department']) == 10){
+            $arr = array_slice($var['department'],0,8, true);
+            $var['department'] = $arr + ['12' => $var['department'][12]] + ['11' => $var['department'][11]];
+        }
+        $var['department'] = $arr;
         $this->assign('result',$result);                                                                                        //nev侧边栏 对着的模块
         $this->assign('department',$var['department']);                                                                         //部门
         $this->assign('suffix',$var['suffix']);                                                                                 //账号
