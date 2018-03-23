@@ -424,15 +424,10 @@ class ProductController extends ParentController
         }
         $extension=strtolower(substr(strrchr($filediebase,"."),1));
 
-        if( $extension =='xlsx' )
-        {
-
+        if( $extension =='xlsx' ) {
             $reader = \PHPExcel_IOFactory::createReader('Excel2007');
-        }
-        else
-        {
+        } else {
             $reader = \PHPExcel_IOFactory::createReader('Excel5'); //设置以Excel5格式(Excel97-2003工作簿)
-
         }
         $PHPExcel = $reader->load($filediebase); // 载入excel文件
         $sheet = $PHPExcel->getSheet(0); // 读取第一個工作表
