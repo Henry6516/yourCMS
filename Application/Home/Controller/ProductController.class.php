@@ -293,8 +293,8 @@ class ProductController extends ParentController
         error_reporting(E_ALL);
         date_default_timezone_set('Asia/ShangHai');
         /** PHPExcel_IOFactory */
-        import('ORG.Util.PHPExcel');//手动加载第三方插件
-        import("ORG.Util.PHPExcel.IOFactory.php");
+        import('Org.Util.PHPExcel');//手动加载第三方插件
+        import("Org.Util.PHPExcel.IOFactory.php");
         import("Org.Util.PHPExcel.Writer.Excel5");
         import("Org.Util.PHPExcel.Writer.Excel2007");
         // Check prerequisites
@@ -410,8 +410,8 @@ class ProductController extends ParentController
         error_reporting(E_ALL);
         date_default_timezone_set('Asia/ShangHai');
         /** PHPExcel_IOFactory */
-        import('ORG.Util.PHPExcel');//手动加载第三方插件
-        import("ORG.Util.PHPExcel.IOFactory.php");
+        import('Org.Util.PHPExcel');//手动加载第三方插件
+        import("Org.Util.PHPExcel.IOFactory.php");
         import("Org.Util.PHPExcel.Writer.Excel5");
         import("Org.Util.PHPExcel.Writer.Excel2007");
 
