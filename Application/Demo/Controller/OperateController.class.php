@@ -84,7 +84,7 @@ class OperateController extends ParentController
 
 
 
-        for ($i=2; $i<=$highestRow; ++$i) {
+        for ($i=2; $i<=$highestRow; $i++) {
             $data['plat'] = $sheet->getCell("A".$i)->getValue();
             $data['suffix'] = $sheet->getCell("B".$i)->getValue();
             $data['saleopefeezn'] = $sheet->getCell("C".$i)->getValue();

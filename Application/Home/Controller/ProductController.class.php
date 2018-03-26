@@ -342,7 +342,7 @@ class ProductController extends ParentController
         unset($dataset);
 
 
-        for ($i=2; $i<=$highestRow; ++$i) {
+        for ($i=2; $i<=$highestRow; $i++) {
             $data['suffix'] = $sheet->getCell("A".$i)->getValue();
             $data['refund'] = $sheet->getCell("B".$i)->getValue();
 

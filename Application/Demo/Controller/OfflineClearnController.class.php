@@ -76,7 +76,7 @@ class OfflineClearnController extends ParentController
 
 
 
-        for ($i=2; $i<=$highestRow; ++$i) {
+        for ($i=2; $i<=$highestRow; $i++) {
 //            Possess	TimeGroup	Amount	PossessClearnTime
 
 
