@@ -28,6 +28,12 @@ class SalerController extends ParentController
 
         $res = $M->query("select mid from Y_manger WHERE manger='$username'");
         $mangerid =$res[0]['mid'];
+
+        //获取角色
+        $role = $M->query("SELECT roleName FROM Y_user u
+                            LEFT JOIN Y_user_role ur ON ur.Uid=u.Uid
+                            LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                            WHERE username='$username' ");
         $var = [];
         if($res){
             $form_condata = $M->query("SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
@@ -45,6 +51,14 @@ class SalerController extends ParentController
                     LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
                     WHERE d.Dname is not NULL AND sp.suffix is not null  ORDER BY ss.suffix ASC  ";
             $form_condata =  $M->query($sql);
+            $var = $this->fetch_saler_data($form_condata);
+        }elseif($role && $role[0]['rolename'] == "客服"){
+            $form_condata = $M->query("SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
+                    LEFT JOIN Y_user u ON u.Uid=ud.Uid
+                    LEFT JOIN Y_Department d ON d.Did=ud.did
+                    LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
+                    LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
+                    WHERE d.Dname is not NULL AND sp.suffix is not null AND sp.pingtai='eBay' ORDER BY ss.suffix ASC  ");
             $var = $this->fetch_saler_data($form_condata);
         }else{
             $form_condata = $M->query("SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud

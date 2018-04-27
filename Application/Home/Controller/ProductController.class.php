@@ -29,6 +29,12 @@ class ProductController extends ParentController
         $Model = M();
         $SalerRate = $Model->query('select salerrate from Y_Ratemanagement'); //查到salerrate
 
+        //获取角色
+        $role = $Model->query("SELECT roleName FROM Y_user u
+                            LEFT JOIN Y_user_role ur ON ur.Uid=u.Uid
+                            LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                            WHERE username='$username' ");
+
         $data['ExchangeRate'] = $SalerRate[0]['salerrate'];
         $manger = $Model->query("select * from Y_manger where manger='$username'");
         if($manger){
@@ -89,6 +95,34 @@ class ProductController extends ParentController
             session('result',$result);
             $this->display('salernetprofit');
 
+        }elseif($role && $role[0]['rolename'] == "客服"){
+            //如果部门是空的并且销售为空的  就是全部的eBay销售数据
+            if(empty($data['suffix'])){
+                $sql = "select ss.suffix from Y_SuffixSalerman ss 
+                        LEFT JOIN Y_suffixPingtai sp on sp.suffix= ss.suffix
+                        WHERE pingtai='eBay'";
+                $result = $Model->query($sql);
+                foreach($result as $val){
+                    foreach($val as $v)
+                        $res[] =$v;
+                }
+                $data['suffix'] = implode(',',$res);
+            }else{
+                $data['suffix'] = "''$data[suffix] ''"  ;
+            }
+            if(!empty($data['saler'])){
+                $data['saler'] = "''$data[saler] ''"  ;
+            }
+
+            if(!empty($data['StoreName'])){
+                $data['StoreName'] = "''$data[StoreName] ''"  ;
+            }
+
+            $tsql_callSP = "EXEC Z_P_FinancialProfit '$data[pingtai]','$data[DateFlag]','$data[BeginDate]','$data[EndDate]','$data[suffix]','$data[saler]','$data[StoreName]',0,'$data[ExchangeRate]'";
+
+            $result = $Model->query($tsql_callSP);
+            session('result',$result);
+            $this->display('salernetprofit');
         }else{
             if(!empty($data['suffix'])){
                 $data['suffix'] = "''$data[suffix] ''"  ;
