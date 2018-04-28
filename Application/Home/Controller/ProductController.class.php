@@ -37,8 +37,8 @@ class ProductController extends ParentController
 
         $data['ExchangeRate'] = $SalerRate[0]['salerrate'];
         $manger = $Model->query("select * from Y_manger where manger='$username'");
-        if($manger){
 
+        if($manger){
             if(empty($data['suffix'])){
                 $sql = "select ss.suffix from Y_SuffixSalerman ss 
                         LEFT JOIN Y_suffixPingtai sp on sp.suffix= ss.suffix
@@ -62,7 +62,6 @@ class ProductController extends ParentController
             }
 
             $tsql_callSP = "EXEC Z_P_FinancialProfit '$data[pingtai]','$data[DateFlag]','$data[BeginDate]','$data[EndDate]','$data[suffix]','$data[saler]','$data[StoreName]',0,'$data[ExchangeRate]'";
-
             $result = $Model->query($tsql_callSP);
             session('result',$result);
             $this->assign('result',$result);
@@ -88,7 +87,6 @@ class ProductController extends ParentController
             if(!empty($data['StoreName'])){
                 $data['StoreName'] = "''$data[StoreName] ''"  ;
             }
-
             $tsql_callSP = "EXEC Z_P_FinancialProfit '$data[pingtai]','$data[DateFlag]','$data[BeginDate]','$data[EndDate]','$data[suffix]','$data[saler]','$data[StoreName]',0,'$data[ExchangeRate]'";
 
             $result = $Model->query($tsql_callSP);
@@ -97,6 +95,18 @@ class ProductController extends ParentController
 
         }elseif($role && $role[0]['rolename'] == "客服"){
             //如果部门是空的并且销售为空的  就是全部的eBay销售数据
+            if(empty($data['saler'])||$data['saler']=='All默认'){
+                if(empty($data['department'])){
+                    $data['saler'] = '';
+                }else{
+                    $sales =$this->department_saler($data['department']);
+                    $data['saler'] = "''$sales''" ;
+                }
+            }else{
+                $data['saler'] = "''$data[saler] ''"  ;
+            }
+
+            //如果账号为空  就是全部的eBay账号销售数据
             if(empty($data['suffix'])){
                 $sql = "select ss.suffix from Y_SuffixSalerman ss 
                         LEFT JOIN Y_suffixPingtai sp on sp.suffix= ss.suffix
@@ -107,19 +117,16 @@ class ProductController extends ParentController
                         $res[] =$v;
                 }
                 $data['suffix'] = implode(',',$res);
-            }else{
-                $data['suffix'] = "''$data[suffix] ''"  ;
             }
-            if(!empty($data['saler'])){
-                $data['saler'] = "''$data[saler] ''"  ;
+
+            if(!empty($data['suffix'])){
+                $data['suffix'] = "''$data[suffix] ''"  ;
             }
 
             if(!empty($data['StoreName'])){
                 $data['StoreName'] = "''$data[StoreName] ''"  ;
             }
-
             $tsql_callSP = "EXEC Z_P_FinancialProfit '$data[pingtai]','$data[DateFlag]','$data[BeginDate]','$data[EndDate]','$data[suffix]','$data[saler]','$data[StoreName]',0,'$data[ExchangeRate]'";
-
             $result = $Model->query($tsql_callSP);
             session('result',$result);
             $this->display('salernetprofit');
