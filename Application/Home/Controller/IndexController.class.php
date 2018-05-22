@@ -10,7 +10,24 @@ class IndexController extends ParentController{
 
     //主方法
     public function index(){
-        redirect('/home/users/login');
+        $username = session('username');
+        if($username){
+            $M = M();
+            $sql = "select DISTINCT menuName,menuURL,rm.menuid
+                from Y_user u
+                LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
+                LEFT JOIN Y_role r ON r.roleid=ur.roleid
+                LEFT JOIN Y_role_menu rm ON rm.roleid=r.roleid
+                LEFT JOIN Y_netprofitmenu npm ON npm.menuid=rm.menuid
+                WHERE u.username='$username' 
+                ORDER BY rm.menuid";
+            $result = $M->query($sql);
+            $this->assign('username',$username);
+            $this->assign('result',$result);
+            $this->display('demo');
+        }else{
+            redirect('/home/users/login');
+        }
     }
 
 
@@ -24,9 +41,6 @@ class IndexController extends ParentController{
         $this->render('管理中心');
         $this->display('home');
     }
-
-
-
 
 
 

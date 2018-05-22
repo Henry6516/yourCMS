@@ -14,7 +14,6 @@ class TrendController extends ParentController
     }
 
     public function getCondition()
-
     {
         $username = session('username');
         $M = M();
@@ -37,7 +36,7 @@ class TrendController extends ParentController
                                         LEFT JOIN Y_Department d ON d.Did=ud.did
                                         LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
                                         LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
-                                        WHERE mangerid='$mangerid'
+                                        WHERE mangerid='$mangerid' AND sp.pingtai IN ('eBay','Wish','Amazon','Joom','SMT')
                                         ORDER BY ss.suffix ASC");
             $var = $this->fetch_saler_data($form_condata);
         }elseif($username == "admin"){
@@ -46,7 +45,7 @@ class TrendController extends ParentController
                     LEFT JOIN Y_Department d ON d.Did=ud.did
                     LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
                     LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
-                    WHERE d.Dname is not NULL AND sp.suffix is not null
+                    WHERE d.Dname is not NULL AND sp.suffix is not null AND sp.pingtai IN ('eBay','Wish','Amazon','Joom','SMT')
                      ORDER BY ss.suffix ASC";
             $form_condata =  $M->query($sql);
             $var = $this->fetch_saler_data($form_condata);
@@ -56,7 +55,7 @@ class TrendController extends ParentController
                                         LEFT JOIN Y_Department d ON d.Did=ud.did
                                         LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
                                         LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
-                                        WHERE username='$username'
+                                        WHERE username='$username' AND sp.pingtai IN ('eBay','Wish','Amazon','Joom','SMT')
                                         ORDER BY ss.suffix ASC");
 
             $var =  $this->fetch_saler_data($form_condata);

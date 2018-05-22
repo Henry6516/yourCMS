@@ -41,7 +41,7 @@ class SalerController extends ParentController
                                         LEFT JOIN Y_Department d ON d.Did=ud.did
                                         LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
                                         LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
-                                        WHERE mangerid='$mangerid'  ORDER BY ss.suffix ASC ");
+                                        WHERE mangerid='$mangerid' AND sp.pingtai IN ('eBay','Wish','Amazon','Joom','SMT')  ORDER BY ss.suffix ASC ");
             $var = $this->fetch_saler_data($form_condata);
         }elseif($username == "admin"){
             $sql = "SELECT d.Did ,d.Dname,u.username,ss.suffix,sp.pingtai FROM Y_userDepartment ud
@@ -49,7 +49,7 @@ class SalerController extends ParentController
                     LEFT JOIN Y_Department d ON d.Did=ud.did
                     LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
                     LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
-                    WHERE d.Dname is not NULL AND sp.suffix is not null  ORDER BY ss.suffix ASC  ";
+                    WHERE d.Dname is not NULL AND sp.suffix is not null AND sp.pingtai IN ('eBay','Wish','Amazon','Joom','SMT')  ORDER BY ss.suffix ASC  ";
             $form_condata =  $M->query($sql);
             $var = $this->fetch_saler_data($form_condata);
         }elseif($role && $role[0]['rolename'] == "客服"){
@@ -66,7 +66,7 @@ class SalerController extends ParentController
                                         LEFT JOIN Y_Department d ON d.Did=ud.did
                                         LEFT JOIN Y_SuffixSalerman ss ON ss.uid=u.Uid
                                         LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
-                                        WHERE username='$username'
+                                        WHERE username='$username' AND sp.pingtai IN ('eBay','Wish','Amazon','Joom','SMT')
                                          ORDER BY ss.suffix ASC  ");
 
             $var =  $this->fetch_saler_data($form_condata);
