@@ -27,7 +27,7 @@ class SuffixController extends Controller
         $sql_users = "SELECT ss.id,ss.suffix,salesman as username,m.manger,sp.pingtai FROM Y_SuffixSalerman ss
                     left JOIN  Y_manger m ON m.mid =ss.mangerid
                     LEFT JOIN Y_suffixPingtai sp ON sp.suffix=ss.suffix
-                    WHERE sp.pingtai IN ('eBay','Wish','Amazon','Joom','SMT')
+                    WHERE sp.pingtai not in ('Shopee','LAZADA','Topbuy')
                     ORDER BY ss.suffix ASC ";
         $data = $M->query($sql_users);
         $this->assign('data',$data);
