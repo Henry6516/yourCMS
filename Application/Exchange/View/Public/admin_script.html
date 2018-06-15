@@ -135,6 +135,12 @@
             })
         })
 
+        //菜单高亮显示
+        if(window.location.href.indexOf('/Exchange/Index/index')>=0){
+            $('.page-sidebar-menu').find('.active').removeClass('active');
+            var li_a = $('.page-sidebar-menu').find('a[href="/Exchange/Index/index"]');
+            li_a.parent('li').addClass('active');
+        }
 
 
 

@@ -137,6 +137,12 @@
 
         // 美工模块 根据部门 找到对应的 美工(责任人)
 
+        //菜单高亮显示
+        if(window.location.href.indexOf('/Possess/PossessMan/show_ui_page')>=0){
+            $('.page-sidebar-menu').find('.active').removeClass('active');
+            var li_a = $('.page-sidebar-menu').find('a[href="/Possess/PossessMan/show_ui_page"]');
+            li_a.parent('li').addClass('active');
+        }
 
 
 
