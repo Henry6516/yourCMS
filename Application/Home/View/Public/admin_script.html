@@ -135,6 +135,12 @@
             })
         })
 
+        //菜单高亮显示
+        if(window.location.href.indexOf('/Profit/Profit/index')>=0){
+            $('.page-sidebar-menu').find('.active').removeClass('active');
+            var li_a = $('.page-sidebar-menu').find('a[href="/Profit/Profit/index"]');
+            li_a.parent('li').addClass('active');
+        }
 
 
 
