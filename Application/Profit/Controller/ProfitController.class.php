@@ -281,57 +281,39 @@ class ProfitController extends ParentController
         session('result', null);
 
         foreach ($result as $field => $v) {
-            if ($field == 'possessMan2') {
-                $headArr[] = '责任人2';
+            if ($field == 'suffix') {
+                $headArr[] = '卖家简称';
             }
-            if ($field == 'salemoneyrmbus') {
-                $headArr[] = '成交价$';
+            if ($field == 'pingtai') {
+                $headArr[] = '平台';
             }
-            if ($field == 'salemoneyrmbzn') {
-                $headArr[] = '成交价￥';
+            if ($field == 'salesman') {
+                $headArr[] = '销售员';
             }
-            if ($field == 'ppebayus') {
-                $headArr[] = '交易费汇总$';
+            if ($field == 'goodscode') {
+                $headArr[] = '商品编码';
             }
-            if ($field == 'ppebayzn') {
-                $headArr[] = '交易费汇总￥';
+            if ($field == 'goodsname') {
+                $headArr[] = '商品名称';
             }
-            if ($field == 'costmoneyrmb') {
-                $headArr[] = '商品成本￥';
+            if ($field == 'salername') {
+                $headArr[] = '开发员';
             }
-            if ($field == 'expressfarermb') {
-                $headArr[] = '运费成本￥';
+            if ($field == 'skuqty') {
+                $headArr[] = '销量';
             }
-            if ($field == 'inpackagefeermb') {
-                $headArr[] = '包装成本￥';
+            if ($field == 'salemoneyrmb') {
+                $headArr[] = '销售额￥';
             }
-            if ($field == 'diefee') {
-                $headArr[] = '死库处理￥';
+            if ($field == 'profitrmb') {
+                $headArr[] = '利润￥';
             }
-            if ($field == 'refund') {
-                $headArr[] = '退款金额￥';
+            if ($field == 'rate') {
+                $headArr[] = '利润率%';
             }
-            if ($field == 'refundrate') {
-                $headArr[] = '退款率%';
-            }
-            if ($field == 'shopMultifee') {
-                $headArr[] = '店铺杂费￥';
-            }
-            if ($field == 'opfee') {
-                $headArr[] = '运营杂费￥';
-            }
-            if ($field == 'netprofit') {
-                $headArr[] = '毛利￥';
-            }
-            if ($field == 'netrate') {
-                $headArr[] = '毛利率%';
-            }
-
-
         }
 
-        $filename = "eBay销售毛利润报表";
-
+        $filename = "账号产品利润表";
         $this->exportexcel($filename, $headArr, $result);
     }
 
