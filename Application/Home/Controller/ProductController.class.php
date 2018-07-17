@@ -167,11 +167,12 @@ class ProductController extends ParentController
     public function department_saler($departmentid){
 
         $Model = M();
+        $departments = implode(',', $departmentid);
         $sql ="select u.username from Y_userDepartment d
             left JOIN Y_user  u ON u.uid=d.uid
             LEFT JOIN Y_user_role ur ON ur.uid=u.Uid
             LEFT JOIN Y_role r ON r.roleid=ur.roleid
-             WHERE d.did='$departmentid' and r.roleName='销售员' 
+             WHERE d.did in ($departments) and r.roleName='销售员' 
              order by u.username asc";
         $res = $Model->query($sql);
         foreach($res as $val) {
