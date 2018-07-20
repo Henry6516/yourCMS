@@ -167,6 +167,10 @@ class ProductController extends ParentController
     public function department_saler($departmentid){
 
         $Model = M();
+        $departmentid = array_filter($departmentid,
+            function ($ele) {
+                 return !empty($ele);
+            });
         $departments = implode(',', $departmentid);
         $sql ="select u.username from Y_userDepartment d
             left JOIN Y_user  u ON u.uid=d.uid
