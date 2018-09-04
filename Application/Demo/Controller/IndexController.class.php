@@ -130,14 +130,23 @@ class IndexController extends ParentController
     {
         $recoder = session('recoder');
         foreach ($recoder as $value){
-            if($value['tabletype']=='归属1人表'){
+            if($value['tabletype']=='推荐人'){
                 $res[] = array_slice($value,1);
             }
 
         }
+        echo    json_encode($res);
+    }
 
-     echo    json_encode($res);
-
+    public function introducer()
+    {
+        $recoder = session('introducer');
+        foreach ($recoder as $value){
+            if($value['tabletype']=='推荐人表'){
+                $res[] = array_slice($value,1);
+            }
+        }
+        echo    json_encode($res);
     }
 
 
