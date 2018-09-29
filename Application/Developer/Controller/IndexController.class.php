@@ -196,6 +196,7 @@ class IndexController extends ParentController
 
 //        $sql = "exec Z_P_DevNetprofit '$data[DateFlag]','$data[BeginDate]','$data[EndDate]','','$data[salername]','','','','','','','0','0','0','0'";
         $sql = "exec P_DevNetprofit_advanced '$data[DateFlag]','$data[BeginDate]','$data[EndDate]','','$data[salername]','','','','','','','0','0','0','0'";
+
         $recoder =$Model->query($sql);
         session('recoder',$recoder);
         $this->display('dev_netprofit');

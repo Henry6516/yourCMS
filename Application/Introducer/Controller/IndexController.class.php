@@ -164,7 +164,7 @@ class IndexController extends ParentController
 
     //    $sql = "exec P_DevNetprofit_advanced '$data[DateFlag]','$data[BeginDate]','$data[EndDate]','','$data[salername]','','','','','','','0','0','0','0'";
         $sql = "exec P_RefereeProfit_advanced '$data[DateFlag]','$data[BeginDate]','$data[EndDate]','$data[salername]'";
-       //print_r($sql);exit;
+        //print_r($sql);exit;
         $recoder = $Model->query($sql);
         session('introducer', $recoder);
         $this->display('dev_netprofit');
@@ -219,51 +219,52 @@ class IndexController extends ParentController
 
     public function export()
     {
-        $recoder = session('recoder');
-        session('recoder', null);
+        $recoder = session('introducer');
+        //var_dump($recoder);exit;
+        session('introducer', null);
         foreach ($recoder as $field => $v) {
             if ($field == 'tableType') {
                 $headArr[] = '表类型';
             }
-            if ($field == 'timegroupzero') {
+            if ($field == 'timegroupZero') {
                 $headArr[] = '时间分组';
             }
             if ($field == 'salernameZero') {
-                $headArr[] = '业绩归属人';
+                $headArr[] = '推荐人';
             }
 
-            if ($field == 'salemoneyrmbuszero') {
+            if ($field == 'salemoneyrmbusZero') {
                 $headArr[] = '销售额$(0-6月)';
             }
-            if ($field == 'salemoneyrmbznzero') {
+            if ($field == 'salemoneyrmbznZero') {
                 $headArr[] = '销售额￥(0-6月)';
             }
-            if ($field == 'costmoneyrmbzero') {
+            if ($field == 'costmoneyrmbZero') {
                 $headArr[] = '商品成本￥(0-6月)';
             }
-            if ($field == 'ppebayuszero') {
+            if ($field == 'ppebayusZero') {
                 $headArr[] = '交易费汇总$(0-6月)';
             }
-            if ($field == 'ppebayznzero') {
+            if ($field == 'ppebayznZero') {
                 $headArr[] = '交易费汇总￥(0-6月)';
             }
             if ($field == 'inpackagefeermbzero') {
                 $headArr[] = '内包装成本￥(0-6月)';
             }
-            if ($field == 'expressfarermbzero') {
+            if ($field == 'expressfarermbZero') {
                 $headArr[] = '运费成本￥(0-6月)';
             }
-            if ($field == 'devofflinefeezero') {
+            if ($field == 'devofflinefeeZero') {
                 $headArr[] = '死库费用￥(0-6月)';
             }
             if ($field == 'devOpeFeeZero') {
                 $headArr[] = '运营杂费(0-6月)';//	devOpeFeeSix	devOpeFeeTwe
             }
-            if ($field == 'netprofitzero') {
+            if ($field == 'netprofitZero') {
                 $headArr[] = '毛利润￥(0-6月)';
 
             }
-            if ($field == 'netratezero') {
+            if ($field == 'netrateZero') {
                 $headArr[] = '毛利润率%(0-6月)';
             }
 
@@ -355,7 +356,7 @@ class IndexController extends ParentController
             }
 
         }
-        $filename = "开发毛利润报表";
+        $filename = "推荐人毛利润报表";
 
         $this->exportexcel($recoder, $headArr, $filename);
     }
@@ -370,8 +371,8 @@ class IndexController extends ParentController
      * $arr = $stu -> select();
      * exportexcel($arr,array('id','账户','密码','昵称'),'文件名!');
      */
-    function exportexcel($data = array(), $title = array(), $filename = 'report')
-    {
+
+    public function exportexcel($data, $headArr, $filename){
         //导入PHPExcel类库，因为PHPExcel没有用命名空间，只能import导入
         import("Org.Util.PHPExcel");
         import("Org.Util.PHPExcel.Writer.Excel5");
@@ -382,29 +383,51 @@ class IndexController extends ParentController
         $objProps = $objPHPExcel->getProperties();
         //设置表头
         $key = ord("A");
+        $key2 = ord("@");//@--64
         //print_r($headArr);exit;
-        foreach ($title as $v) {
-            $colum = chr($key);
-            $objPHPExcel->setActiveSheetIndex(0)->setCellValue($colum . '1', $v);
-            $objPHPExcel->setActiveSheetIndex(0)->setCellValue($colum . '1', $v);
+        foreach($headArr as $v){
+            if($key>ord("Z")){
+                $key2 += 1;
+                $key = ord("A");
+                $colum = chr($key2).chr($key);//超过26个字母时才会启用
+            }else{
+                if($key2>=ord("A")){
+                    $colum = chr($key2).chr($key);//超过26个字母时才会启用
+                }else{
+                    $colum = chr($key);
+                }
+            }
+            $objPHPExcel->setActiveSheetIndex(0) ->setCellValue($colum.'1', $v);
             $key += 1;
         }
 
-        $column = 2;
-        $objActSheet = $objPHPExcel->getActiveSheet();
-        foreach ($data as $key => $rows) { //行写入
+        $col = 2;
+
+        foreach($data as $ke => $rows){
             $span = ord("A");
-            foreach ($rows as $keyName => $value) {// 列写入
-                $j = chr($span);
-                $objActSheet->setCellValue($j . $column, $value);
-                $span++;
+            $span2 = ord("@");//@--64
+            //行写入
+            foreach($rows as $v){
+                if($span>ord("Z")){
+                    $span2 += 1;
+                    $span = ord("A");
+                    $column = chr($span2).chr($span);//超过26个字母时才会启用
+                }else{
+                    if($span2>=ord("A")){
+                        $column = chr($span2).chr($span);//超过26个字母时才会启用
+                    }else{
+                        $column = chr($span);
+                    }
+                }
+                $objPHPExcel->setActiveSheetIndex(0) ->setCellValue($column.$col, $v);
+                $span += 1;
+
             }
-            $column++;
+            $col++;
+
         }
         $fileName = iconv("utf-8", "gb2312", $filename);
 
-        //重命名表
-        //$objPHPExcel->getActiveSheet()->setTitle('test');
         //设置活动单指数到第一个表,所以Excel打开这是第一个表
         $objPHPExcel->setActiveSheetIndex(0);
         ob_end_clean();//清除缓冲区,避免乱码
@@ -414,7 +437,6 @@ class IndexController extends ParentController
         $objWriter = \PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
         $objWriter->save('php://output'); //文件通过浏览器下载
         exit;
-
-
     }
+
 }
